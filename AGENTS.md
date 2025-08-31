@@ -1,5 +1,8 @@
 # Agent Guidelines for Infrastructure Repository
 
+## Repo Layout
+- Follow the repository file/folder layout described here: ./docs/components/infra/repo_layout.md
+
 ## Build & Operations Commands
 - Start services: `docker compose up -d`
 - Stop services: `docker compose down`
@@ -20,3 +23,6 @@
 - Database initialization scripts: database/init/*.sql (numbered for order)
 - Data persistence: docker_data/ (gitignored)
 - Environment vars defined inline in compose.yaml for simplicity
+
+## Documentation
+- All documents related to the repo are in ./docs/components/infra/ - the other folders in ./docs are READ ONLY
